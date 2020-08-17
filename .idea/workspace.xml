@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bfd9aa63-4554-4e3b-9ac5-dc5cf3319d93" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="composer.json" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1eUeDZJlQKScVDDaHQGbix8DIFY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Specialist" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bfd9aa63-4554-4e3b-9ac5-dc5cf3319d93" name="Default Changelist" comment="" />
+      <created>1594380480681</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594380480681</updated>
+      <workItem from="1594380481845" duration="8612000" />
+      <workItem from="1594464789529" duration="599000" />
+      <workItem from="1594554478445" duration="4448000" />
+      <workItem from="1594638568504" duration="16273000" />
+      <workItem from="1594656861689" duration="1758000" />
+      <workItem from="1594658874037" duration="11653000" />
+      <workItem from="1594726146124" duration="10710000" />
+      <workItem from="1594740887467" duration="16000" />
+      <workItem from="1595417561259" duration="599000" />
+      <workItem from="1595425830766" duration="361000" />
+      <workItem from="1595497039937" duration="12197000" />
+      <workItem from="1595595533453" duration="5503000" />
+      <workItem from="1595849356953" duration="5086000" />
+      <workItem from="1595932732427" duration="9405000" />
+      <workItem from="1596105710166" duration="8150000" />
+      <workItem from="1596121515359" duration="2292000" />
+      <workItem from="1596193419707" duration="9193000" />
+      <workItem from="1596211208034" duration="5370000" />
+      <workItem from="1596454481827" duration="3534000" />
+      <workItem from="1596536816896" duration="9854000" />
+      <workItem from="1596635317095" duration="9193000" />
+      <workItem from="1596712311596" duration="7676000" />
+      <workItem from="1596800425230" duration="6791000" />
+      <workItem from="1597146889298" duration="13279000" />
+      <workItem from="1597230628631" duration="4865000" />
+      <workItem from="1597319705120" duration="10981000" />
+      <workItem from="1597357844911" duration="5789000" />
+      <workItem from="1597664268774" duration="1068000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="302" y="353" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594381520196">
+      <screen x="55" y="0" width="1865" height="1080" />
+    </state>
+    <state x="302" y="353" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/55.0.1865.1080@55.0.1865.1080" timestamp="1594381520196" />
+    <state x="802" y="325" width="618" height="674" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594735503218">
+      <screen x="55" y="0" width="1865" height="1080" />
+    </state>
+    <state x="802" y="325" width="618" height="674" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/55.0.1865.1080@55.0.1865.1080" timestamp="1594735503218" />
+    <state x="720" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597165354404">
+      <screen x="55" y="0" width="1865" height="1080" />
+    </state>
+    <state x="720" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/55.0.1865.1080@55.0.1865.1080" timestamp="1597165354404" />
+    <state x="510" y="1055" width="624" height="491" key="DUMP_DIALOG_DIMENSION_KEY" timestamp="1597362384316">
+      <screen x="55" y="0" width="3465" height="1747" />
+    </state>
+    <state x="510" y="1055" width="624" height="491" key="DUMP_DIALOG_DIMENSION_KEY/55.0.3465.1747@55.0.3465.1747" timestamp="1597362384316" />
+    <state x="950" y="333" width="424" height="491" key="FileChooserDialogImpl" timestamp="1596543037926">
+      <screen x="55" y="0" width="1865" height="1080" />
+    </state>
+    <state x="950" y="333" width="424" height="491" key="FileChooserDialogImpl/55.0.1865.1080@55.0.1865.1080" timestamp="1596543037926" />
+    <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1594381529153">
+      <screen x="55" y="0" width="1865" height="1080" />
+    </state>
+    <state width="263" height="500" key="HiddenNamespacesPopup/55.0.1865.1080@55.0.1865.1080" timestamp="1594381529153" />
+    <state x="570" y="286" width="824" height="515" key="IDE.errors.dialog" timestamp="1594386108785">
+      <screen x="55" y="0" width="1865" height="1080" />
+    </state>
+    <state x="570" y="286" width="824" height="515" key="IDE.errors.dialog/55.0.1865.1080@55.0.1865.1080" timestamp="1594386108785" />
+    <state x="895" y="144" width="697" height="582" key="NewPhpClassDialog" timestamp="1596803396625">
+      <screen x="55" y="0" width="1865" height="1080" />
+    </state>
+    <state x="895" y="144" width="697" height="582" key="NewPhpClassDialog/55.0.1865.1080@55.0.1865.1080" timestamp="1596803396625" />
+    <state x="783" y="465" width="399" height="156" key="NewPhpFileDialog" timestamp="1594657438282">
+      <screen x="55" y="0" width="1865" height="1080" />
+    </state>
+    <state x="783" y="465" width="399" height="156" key="NewPhpFileDialog/55.0.1865.1080@55.0.1865.1080" timestamp="1594657438282" />
+    <state x="621" y="423" width="367" height="261" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1594740392624">
+      <screen x="55" y="0" width="1865" height="1080" />
+    </state>
+    <state x="621" y="423" width="367" height="261" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/55.0.1865.1080@55.0.1865.1080" timestamp="1594740392624" />
+    <state x="542" y="185" width="484" height="361" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1594664282598">
+      <screen x="55" y="0" width="1865" height="1080" />
+    </state>
+    <state x="542" y="185" width="484" height="361" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/55.0.1865.1080@55.0.1865.1080" timestamp="1594664282598" />
+    <state x="100" y="296" width="1083" height="654" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1596547295419">
+      <screen x="55" y="0" width="1865" height="1080" />
+    </state>
+    <state x="100" y="296" width="1083" height="654" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/55.0.1865.1080@55.0.1865.1080" timestamp="1596547295419" />
+    <state x="651" y="245" key="run.anything.popup" timestamp="1594665481250">
+      <screen x="55" y="0" width="1865" height="1080" />
+    </state>
+    <state x="651" y="245" key="run.anything.popup/55.0.1865.1080@55.0.1865.1080" timestamp="1594665481250" />
+    <state x="1497" y="649" width="1249" height="1097" key="search.everywhere.popup" timestamp="1597360479473">
+      <screen x="55" y="0" width="3465" height="1747" />
+    </state>
+    <state x="831" y="401" width="672" height="678" key="search.everywhere.popup/55.0.1865.1080@55.0.1865.1080" timestamp="1597335959496" />
+    <state x="1497" y="649" width="1249" height="1097" key="search.everywhere.popup/55.0.3465.1747@55.0.3465.1747" timestamp="1597360479473" />
+  </component>
+</project>

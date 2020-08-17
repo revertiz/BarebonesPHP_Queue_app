@@ -1,0 +1,23 @@
+{
+    "name": "ignas/ph-plenta",
+    "description": "php project",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Ignas P",
+            "email": "ignas@ignas.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-PDO": "*"
+    },
+
+    "autoload": {
+            "psr-4": {"Code\\": "src/",
+                "JokeSite\\": "src/Model",
+                "JokeList\\": "src/JokeList",
+                "JokeForm\\": "src/JokeForm"
+            }
+    }
+}
