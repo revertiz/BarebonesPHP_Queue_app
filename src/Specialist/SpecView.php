@@ -46,7 +46,7 @@ class SpecialistView
                     </thead>
                     <tbody>';
 
-            $position =1;
+            $position = 1;
             foreach ($model->getClients($_GET['specialist-id']) as $person) {
                 $output .= '
 

@@ -23,12 +23,11 @@ class RegistrationView
         }
         $output .= '<div class="container">';
 
-        if($model->isSubmitted()) {
-            $output.= '<p class="text-success">Registracija sekminga</p>';
-            $output.= '<div>Nuoroda i jusu laukimo puslapi: <a href="/index.php?route=client&token=' . $record['token'] .'">' . $record['name'] . ' </a></div>';
-            $output.= '<div>Jusu kliento id: <b>' . $record['id'] .'</b></div>';
+        if ($model->isSubmitted()) {
+            $output .= '<p class="text-success">Registracija sekminga</p>';
+            $output .= '<div>Nuoroda i jusu laukimo puslapi: <a href="/index.php?route=client&token=' . $record['token'] . '">' . $record['name'] . ' </a></div>';
+            $output .= '<div>Jusu kliento id: <b>' . $record['id'] . '</b></div>';
         }
-
 
 
 //        if ($model->isSubmitted() && empty($errors)) {
@@ -36,7 +35,7 @@ class RegistrationView
 //        }
 
 
-        if(!$model->isSubmitted()) {
+        if (!$model->isSubmitted()) {
             $output .= '
             <form action="" method="post">
 
@@ -56,7 +55,7 @@ class RegistrationView
               <select name="register[specialist_id]" class="form-control" >';
 
 
-//TODO cia galima buvo susikurti klaseje specialist ir pasiduoti ir praloopinti specialistus
+//TODO cia galima buvo susikurti klaseje specialist ir pasiduoti kaip dependency ir praloopinti specialistus
             if ($record['specialist_id'] == '1') {
                 $output .= '<option selected value="1">Linas</option>
         <option value="2">Petras</option>

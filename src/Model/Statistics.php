@@ -4,7 +4,6 @@
 namespace Code\Model;
 
 
-
 class Statistics
 {
     private $time;
@@ -44,43 +43,26 @@ class Statistics
     {
 
 
-//        print_r($this->specialist);
-//        print_r($this->weekday);
-        if (empty($this->specialist)){
+        if (empty($this->specialist)) {
             $specialists = '';
         } else {
             $specialists = implode(',', $this->specialist);
         }
 
-        if (empty($this->weekday)){
+        if (empty($this->weekday)) {
             $weekdays = '';
         } else {
-            $weekdays = implode (',', $this->weekday);
+            $weekdays = implode(',', $this->weekday);
         }
-//        var_dump($specialists);
-//        print_r($weekdays);
-
-//        var_dump($specialistArray);
-//        $stmt = $this->pdo->prepare('SELECT HOUR(service_start) as hour, COUNT(*) as hour_counts FROM time WHERE WEEKDAY(service_start) = 0 GROUP BY hour');
-//        $stmt = $this->pdo->prepare('SELECT WEEKDAY(service_start) as weekday, specialist_id FROM time GROUP BY weekday,specialist_id');
-
-        $stmt = $this->pdo->prepare('SELECT hour, hour_counts, weekday, AllTable.specialist_id FROM
-        (SELECT specialist_id, HOUR(service_start) as hour, WEEKDAY(service_start) as weekday FROM time WHERE specialist_id = 1) AS AllTable');
 
         $stmt = $this->pdo->prepare('SELECT hour, hour_counts, weekday FROM 
         (SELECT HOUR(service_start) as hour,COUNT(*) as hour_counts, WEEKDAY(service_start) as weekday FROM time
         WHERE specialist_id IN (' . $specialists . ') GROUP BY hour, weekday) AS GroupedTabled
-        WHERE weekday IN ('. $weekdays .') GROUP BY weekday, hour ORDER BY weekday');
-
-
-
-//        $sql = 'SELECT *
-//          FROM `table`
-//         WHERE `id` IN (' . implode(',', array_map('intval', $array)) . ')';
+        WHERE weekday IN (' . $weekdays . ') GROUP BY weekday, hour ORDER BY weekday');
 
         $stmt->execute();
         $results = $stmt->fetchAll();
-//        print_r($results);
+
         return $results;
     }
 }

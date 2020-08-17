@@ -11,7 +11,7 @@ class StatisticsController
     public function statistics(Statistics $statistics)
     {
         if (!empty($_GET['specialist'])) {
-                $statistics = $statistics->specialist($_GET['specialist']);
+            $statistics = $statistics->specialist($_GET['specialist']);
         }
 
         if (!empty($_GET['weekday'])) {

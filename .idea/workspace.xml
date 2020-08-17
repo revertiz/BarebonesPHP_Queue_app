@@ -80,7 +80,7 @@
       <workItem from="1597230628631" duration="4865000" />
       <workItem from="1597319705120" duration="10981000" />
       <workItem from="1597357844911" duration="5789000" />
-      <workItem from="1597664268774" duration="1068000" />
+      <workItem from="1597664268774" duration="2542000" />
     </task>
     <servers />
   </component>
@@ -100,14 +100,15 @@
       <screen x="55" y="0" width="1865" height="1080" />
     </state>
     <state x="720" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/55.0.1865.1080@55.0.1865.1080" timestamp="1597165354404" />
-    <state x="510" y="1055" width="624" height="491" key="DUMP_DIALOG_DIMENSION_KEY" timestamp="1597362384316">
-      <screen x="55" y="0" width="3465" height="1747" />
-    </state>
-    <state x="510" y="1055" width="624" height="491" key="DUMP_DIALOG_DIMENSION_KEY/55.0.3465.1747@55.0.3465.1747" timestamp="1597362384316" />
-    <state x="950" y="333" width="424" height="491" key="FileChooserDialogImpl" timestamp="1596543037926">
+    <state x="460" y="506" width="624" height="491" key="DUMP_DIALOG_DIMENSION_KEY" timestamp="1597668083333">
       <screen x="55" y="0" width="1865" height="1080" />
     </state>
-    <state x="950" y="333" width="424" height="491" key="FileChooserDialogImpl/55.0.1865.1080@55.0.1865.1080" timestamp="1596543037926" />
+    <state x="460" y="506" width="624" height="491" key="DUMP_DIALOG_DIMENSION_KEY/55.0.1865.1080@55.0.1865.1080" timestamp="1597668083333" />
+    <state x="510" y="1055" width="624" height="491" key="DUMP_DIALOG_DIMENSION_KEY/55.0.3465.1747@55.0.3465.1747" timestamp="1597362384316" />
+    <state x="950" y="333" width="424" height="491" key="FileChooserDialogImpl" timestamp="1597668026933">
+      <screen x="55" y="0" width="1865" height="1080" />
+    </state>
+    <state x="950" y="333" width="424" height="491" key="FileChooserDialogImpl/55.0.1865.1080@55.0.1865.1080" timestamp="1597668026933" />
     <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1594381529153">
       <screen x="55" y="0" width="1865" height="1080" />
     </state>
@@ -124,10 +125,10 @@
       <screen x="55" y="0" width="1865" height="1080" />
     </state>
     <state x="783" y="465" width="399" height="156" key="NewPhpFileDialog/55.0.1865.1080@55.0.1865.1080" timestamp="1594657438282" />
-    <state x="621" y="423" width="367" height="261" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1594740392624">
+    <state x="621" y="423" width="367" height="268" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1597667935314">
       <screen x="55" y="0" width="1865" height="1080" />
     </state>
-    <state x="621" y="423" width="367" height="261" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/55.0.1865.1080@55.0.1865.1080" timestamp="1594740392624" />
+    <state x="621" y="423" width="367" height="268" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/55.0.1865.1080@55.0.1865.1080" timestamp="1597667935314" />
     <state x="542" y="185" width="484" height="361" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1594664282598">
       <screen x="55" y="0" width="1865" height="1080" />
     </state>

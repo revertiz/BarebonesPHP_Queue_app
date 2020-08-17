@@ -31,7 +31,7 @@ class Registration
         $this->token = $token;
     }
 
-    public function getErrors() : array
+    public function getErrors(): array
     {
         return $this->errors;
     }
@@ -43,15 +43,10 @@ class Registration
 
     public function save(array $record)
     {
-       return $this->insert($record);
+        return $this->insert($record);
     }
 
-    public function isSubmitted() : bool
-    {
-        return $this->submitted;
-    }
-
-    public function insert(array $record) : Registration
+    public function insert(array $record): Registration
     {
 
         //validate record for errors and return new object with errors if there are any
@@ -62,7 +57,7 @@ class Registration
 
         //insert client into database
         $stmt = $this->pdo->prepare('INSERT INTO clients (name,surname) VALUES(:name,:surname)');
-        $stmt->execute(['name' => $record['name'],'surname' => $record['surname']]);
+        $stmt->execute(['name' => $record['name'], 'surname' => $record['surname']]);
 
         //set $record['id']
         $record['id'] = $this->pdo->lastInsertId();
@@ -79,20 +74,25 @@ class Registration
         return new Registration($this->pdo, $this->timeManager, $this->token, $record, true);
     }
 
-    public function validate(array $record) :array
+    public function validate(array $record): array
     {
-        $errors =[];
+        $errors = [];
 
-        if (empty($record['name'])){
+        if (empty($record['name'])) {
             $errors[] = 'Irasykite varda';
         }
-        if (empty($record['surname'])){
+        if (empty($record['surname'])) {
             $errors[] = 'Irasykite pavarde';
         }
-        if (!is_numeric(($record['specialist_id']))){
+        if (!is_numeric(($record['specialist_id']))) {
             $errors[] = 'Pasirinkite specialista';
         }
 
         return $errors;
+    }
+
+    public function isSubmitted(): bool
+    {
+        return $this->submitted;
     }
 }

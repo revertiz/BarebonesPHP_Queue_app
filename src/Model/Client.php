@@ -36,6 +36,7 @@ class Client
         $this->serviceStart = $results['service_start'];
 
     }
+
     public function getClientById($clientId)
     {
         $stmt = $this->pdo->prepare('SELECT clients.id, clients.name, surname, serviced, service_start, specialists.name as specialist_name, specialists.id as specialist_id FROM clients LEFT JOIN time ON clients.id = time.client_id LEFT JOIN specialists ON time.specialist_id = specialists.id WHERE clients.id = :client_id');
@@ -71,8 +72,7 @@ class Client
         $stmt = $this->pdo->prepare('SELECT * FROM time  LEFT JOIN clients ON time.client_id = clients.id WHERE specialist_id = :specialist_id ORDER BY service_start DESC LIMIT 1');
         $stmt->execute(['specialist_id' => $this->specialistId]);
         $results = $stmt->fetchAll();
-        if($this->id == $results[0]['client_id'])
-        {
+        if ($this->id == $results[0]['client_id']) {
             return true;
         }
         return false;
@@ -83,13 +83,13 @@ class Client
         $stmt = $this->pdo->prepare('SELECT * FROM time  LEFT JOIN clients ON time.client_id = clients.id WHERE specialist_id = :specialist_id AND serviced = 0 ORDER BY service_start');
         $stmt->execute(['specialist_id' => $specialistId]);
         $results = $stmt->fetchAll();
-        $index =0;
-        foreach ($results as $key => $value){
+        $index = 0;
+        foreach ($results as $key => $value) {
 
-            if ($value['id'] == $clientId){
-                $clientsId =  $results[$index]['id'];
+            if ($value['id'] == $clientId) {
+                $clientsId = $results[$index]['id'];
                 $clientsServiceStart = $results[$index]['service_start'];
-                $index = $index +1;
+                $index = $index + 1;
                 break;
             }
             $index++;
@@ -109,12 +109,17 @@ class Client
 
     public function getWaitTime()
     {
-        return gmdate("H:i:s",$this->time->calculateAvgServiceTime($this->specialistId) * $this->getPosition());
+        return gmdate("H:i:s", $this->time->calculateAvgServiceTime($this->specialistId) * $this->getPosition());
+    }
+
+    public function getPosition()
+    {
+        return $this->time->getPosition($this->id);
     }
 
     public function getTimeLeft()
     {
-        return gmdate("H:i:s",$this->time->calculateAvgServiceTime($this->specialistId) * $this->getPosition() + strtotime($this->serviceStart) - strtotime(gmdate("H:i:s")));
+        return gmdate("H:i:s", $this->time->calculateAvgServiceTime($this->specialistId) * $this->getPosition() + strtotime($this->serviceStart) - strtotime(gmdate("H:i:s")));
     }
 
     public function getAvgServiceTime()
@@ -125,11 +130,6 @@ class Client
     public function getVisitLength()
     {
         return $this->time->getVisitLength($this->id);
-    }
-
-    public function getPosition()
-    {
-        return $this->time->getPosition($this->id);
     }
 
     public function getName()

@@ -16,7 +16,7 @@ class Specialist
         $this->timeManager = $timeManager;
     }
 
-    public function serviceClient($id, $specialistId) : self
+    public function serviceClient($id, $specialistId): self
     {
         $stmt = $this->pdo->prepare('UPDATE clients SET serviced = 1 WHERE id=:id');
         $stmt->execute(['id' => $id]);

@@ -8,7 +8,7 @@ use Code\Model\Queue;
 
 class QueueView
 {
-    public function output(Queue $model) : string
+    public function output(Queue $model): string
     {
         $output = '';
         $output .= '
@@ -29,25 +29,20 @@ class QueueView
                       </tr>
                     </thead>
                     <tbody>';
-                    $clients = $model->getClients();
-                    $position= 1;
+        $clients = $model->getClients();
+        $position = 1;
 
-                    $avgWaitTime = $clients[0]['timediffavg'];
-                        foreach ($clients as $person) {
-                            //TODO tai $person['wait_time'] yra SEKUNDEM
-                            // service_time yra data
-                            // gmdate yra irgi data
-                            // perkelti expectedServiceTime i modely
-                            $currentTime = strtotime(date("Y:m:d H:i:s"));
-                            $serviceTime = strtotime($person['service_start']) + $person['wait_time'];
-//                            $expectedServiceTime =  gmdate("H:i:s",strtotime($person['service_start']) + $person['wait_time'] - strtotime(date("Y:m:d H:i:s")));
-                            if ($serviceTime-$currentTime <= 0)
-                            {
-                                $expectedServiceTime = 'Aptarnaujama';
-                            } else {
-                                $expectedServiceTime = gmdate("H:i:s", $serviceTime - $currentTime);
-                            }
-                            $output .= '
+        foreach ($clients as $person) {
+
+            $currentTime = strtotime(date("Y:m:d H:i:s"));
+            $serviceTime = strtotime($person['service_start']) + $person['wait_time'];
+
+            if ($serviceTime - $currentTime <= 0) {
+                $expectedServiceTime = 'Aptarnaujama';
+            } else {
+                $expectedServiceTime = gmdate("H:i:s", $serviceTime - $currentTime);
+            }
+            $output .= '
                               
                                     <tr>
                                         <td>' . $position . '</td>
@@ -55,13 +50,13 @@ class QueueView
                                         <td>' . $person['surname'] . '</td>
                                         <td>' . $person['specname'] . '</td>
                                         <td>' . $expectedServiceTime . '</td>
-                                        <td>' . gmdate("H:i:s",$person['wait_time']) . '</td>
+                                        <td>' . gmdate("H:i:s", $person['wait_time']) . '</td>
                                         <td>' . $person['id'] . '</td>
                                     </tr>';
-                            $position += 1;
+            $position += 1;
 
-                        }
-                   $output .= '
+        }
+        $output .= '
                 </tbody>
               </table>
             </div>
